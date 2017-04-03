@@ -259,3 +259,25 @@ OracleとHadoop間のデータ移動を高速化させるツールとしてOraOo
 - Oracle⇔Hadoopの際にOraOopを導入し並列で実行するのが有効
 - OraOopはSqoopのcodegenには対応していない
     - テーブル名は大文字で書いて、スキーマ名を指定しないということを念頭に置く
+
+# 7 PostgreSQLでの動作
+## SqoopのPostgreSQL連携機能
+
+- PostgreSQLからHDFSへのSQLによるインポート
+- PostgreSQLからHDFSへダイレクトインポート(psql)
+- HDFSからPostgreSQLへのSQLによるエクスポート
+
+## PostgreSQLでの利用
+
+- PostgreSQL JDBC
+- PostgreSQLパッケージ
+
+## PostgreSQLによるダイレクトインポート
+
+- psqlを利用したRDBMS上のデータをHDFSに格納する
+
+## 連携の問題
+
+- ダイレクトエクスポート機能がない
+- ダイレクトインポートのクライアントの非スケール
+
