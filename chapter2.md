@@ -6,4 +6,10 @@ Hadoopの操作を実行するためにはhadopコマンドを使う
 
 ## 10 クラスタ外部からHadoopの操作
 
-- 外部のHadoopに設定ファイルをコピーする
+- 外部のHadoopに設定ファイルをコピーする($HADOOP_$HADOOP_HOME/conf)
+    - core-site.xml
+    - hdfs-site.xml
+    - mapred-site.xml
+    - これによりhadoopコマンドが使える
+- アプリケーションからMapReduceを操作する
+    - ToolRunner.runメソッドを使う
