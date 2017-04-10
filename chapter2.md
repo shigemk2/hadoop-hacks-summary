@@ -57,4 +57,10 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
 
 - Hadoopの処理 Map Shuffle Reduce
     - 通常は中間データのkeyのハッシュ値が同じものを同じReduceタスクに振り分ける
-    - 
+    - 案件によっては任意のルールで振り分けしたい
+    - そんな場合にPartitionerクラスをよぶ or 継承する
+- カスタムPartitioner
+    - Partitionaerクラスを継承したもの
+    - ポピュラーな例として複数の軸を基準としてソートを行うセカンダリソートがある
+
+## 14 DistributedCache
