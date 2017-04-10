@@ -39,3 +39,16 @@ Hadoopの操作を実行するためにはhadopコマンドを使う
 ## 12 カスタムWritable型の作り方
 
 MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や任意のデータ構造を定義したいときに活用できる
+
+- Writable Hadoopがが扱うのに適したデータ型
+    - Mapタスクから中間データを出力する
+    - SequenceFileにデータを書き出す
+    - データをシリアライズするときに役立つ
+- すでに用意されているWritable
+    - Textクラス
+    - IntWritable
+- カスタムWritable
+    - Writableインターフェイス
+    - WritableComparableインターフェイス
+
+より効率の良いシリアライズ/デシリアライズ機構をもつ複合データ型を定義できる
