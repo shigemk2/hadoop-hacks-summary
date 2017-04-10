@@ -52,3 +52,9 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
     - WritableComparableインターフェイス
 
 より効率の良いシリアライズ/デシリアライズ機構をもつ複合データ型を定義できる
+
+## 13 カスタムPartitonerの作り方
+
+- Hadoopの処理 Map Shuffle Reduce
+    - 通常は中間データのkeyのハッシュ値が同じものを同じReduceタスクに振り分ける
+    - 
