@@ -94,3 +94,5 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
 - 一度HDFSにストアした大量のファイルを集約してHDFSのヒープ領域の圧迫を回避
 
 ブロック: HDFSに格納するファイルを一定サイズで分割したデータ http://oss.nttdata.co.jp/hadoop/hadoop.html
+
+## 16 MapReduceジョブをテストする
