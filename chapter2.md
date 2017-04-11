@@ -79,4 +79,18 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
 
 ## 15 CombineFileInputFormat
 
-「大量の小さなデータ」を効率的に処理する
+- 「大量の小さなデータ」を効率的に処理する
+- FileInputFormat
+- HDFSのブロックサイズより小さい
+    - スループットの低下
+    - Mapタスクの生成によるタスク制御のオーバーヘッドの増大
+- CombineFileInputFormat
+    - 複数のファイルをまとめたスプリットを作れる
+    - Mapタスクで効率よく処理できる
+- 独自のCombineFileInputFormat
+    - オリジナルの定義は抽象クラスで、独自実装はサブクラス
+    - カスタムRecordReader
+- HDFSは大量の小さなファイルを管理するのが苦手
+- 一度HDFSにストアした大量のファイルを集約してHDFSのヒープ領域の圧迫を回避
+
+ブロック: HDFSに格納するファイルを一定サイズで分割したデータ http://oss.nttdata.co.jp/hadoop/hadoop.html
