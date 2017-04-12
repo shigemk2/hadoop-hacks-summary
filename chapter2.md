@@ -96,3 +96,10 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
 ブロック: HDFSに格納するファイルを一定サイズで分割したデータ http://oss.nttdata.co.jp/hadoop/hadoop.html
 
 ## 16 MapReduceジョブをテストする
+
+- Unitテスト
+    - Mockito
+    - **MRUnit**
+        - MapReduceのジョブはテスト出来てもInput/Outputはテストできない
+            - そのため実際の環境やスタンドアロンモードでテストを行う必要がある
+            - 大量データではなく小さいデータからテストすること
