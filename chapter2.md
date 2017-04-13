@@ -103,3 +103,15 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
         - MapReduceのジョブはテスト出来てもInput/Outputはテストできない
             - そのため実際の環境やスタンドアロンモードでテストを行う必要がある
             - 大量データではなく小さいデータからテストすること
+
+## 17 セカンダリソート
+
+- HadoopはGoogleのMapReduceと違って値のソート機能を持っていないが、キーはデータをReduce側に送るときにソートできる
+    - セカンダリソートで値側をソートする
+    - top/limitといった句と同じく上位10件で出力をやめることができる強みを持つ
+
+- カスタムWritableでセカンダリソートを行うためのクラスを作成
+    + GroupingComparatorClass
+    + PartitionerClass
+    + SortComparatorClass
+    + 各コンパレータを設定
