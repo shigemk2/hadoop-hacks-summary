@@ -115,3 +115,13 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
     + PartitionerClass
     + SortComparatorClass
     + 各コンパレータを設定
+
+## 18 Mapサイドジョイン
+
+- 複数データをジョインｓる方法と独自にデータをジョインする方法
+- Mapサイドジョイン Mapのインプットを用いてRDBMSでいう外部結合を行う
+   - ファイル同士をそれぞれジョインするキーでソートする
+   - ファイルがキーでソートされていたらCompositeInputFormatでファイルをジョインできる
+   - ソートされていなければ普通のMapReduceでキーをソートできるがひと手間必要
+   - 0.20系バージョンの新APIにCompositeInputFormatは存在しない
+
