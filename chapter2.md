@@ -168,3 +168,20 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
 - ジョブ定義
 
 - CassandraとHadoopで連携するための専用パッケージが用意されている
+
+## 23 APIでのHDFS操作
+
+- HDFSを操作するためのAPIがある
+   - DistributedCacheに関するAPIでマスターデータをしゅとくできる
+   - PiEstimetor MapReduceを実行するときにHDFS上に仮データを配置するケースでは、API経由で直接HDFSを操作する
+
+- Java率高め
+
+- ファイルシステム情報の取得
+- HDFSの操作
+- setOwner
+- setPermissoin
+- setReplication
+- getFileStatus
+- getUsed
+- getFileBlockLocation
