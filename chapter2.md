@@ -153,3 +153,18 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
     - SequenceFileOutputFormat
     - など
 - 使用用途に応じて適切なインプットとアウトプットを選択すること
+
+## 22 Cassandraとの連携
+
+- Cassandra カラム指向型NoSQL
+- オライリーの本も参考
+
+- ColumnFamilyInputFormat
+- ColumnFamilyOutputFormat
+- COnfigHelper
+
+- Mapクラス
+- Reduceクラス
+- ジョブ定義
+
+- CassandraとHadoopで連携するための専用パッケージが用意されている
