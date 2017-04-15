@@ -139,3 +139,17 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
 - 1回だけのMapReduceの処理を行うワードカウントアプリケーションは多い
 - 実際は1回ではできないので多段処理がひつよう
 - 分散処理なので1回で処理するより何段かに分けてキーを分散したほうがパフォーマンスが向上することもある
+
+## 21 InputFormat/OutputFormatの使用方法
+
+- InputFormat
+    - FileInputFormat
+    - TextInputFormat
+    - SequenceFileInputFormat
+    - SequenceFileAsTextInputFormat
+    - など
+- OutputFormat
+    - TextOutputFormat
+    - SequenceFileOutputFormat
+    - など
+- 使用用途に応じて適切なインプットとアウトプットを選択すること
