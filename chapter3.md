@@ -25,3 +25,11 @@
 - HFileOutputFormatを使ってBulkロード用のHFileを作る方法を紹介
     - タイムスタンプの指定ができないなど細かい調整ができない
     - その代替としてのHFileOutputFormat
+
+## 29 pre-splitテーブルの作成
+
+- 予めリージョンを分割したテーブルを作成
+    - 自動的にテーブルをリージョン単位に分けてシャーディングを実現するが、処理が重い
+    - ので、pre-splitで予めリージョンを分割しておく
+        - JavaAPI
+        - HBase Shell
