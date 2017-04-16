@@ -42,3 +42,15 @@
         - トリガー
     - Endpoint
         - カスタムRPCプロトコルを提供
+
+## 31 カスタムFilterの作り方
+
+- Scam/Getの際にFilterを指定して、取得するデータのフィルタリングが可能
+    - サーバーサイドでフィルタリングするので不要なデータ転送が発生しない
+    - カスタムFilter
+        - RowKey
+        - KeyValue
+        - KeyValueのリスト
+
+
+
