@@ -33,3 +33,12 @@
     - ので、pre-splitで予めリージョンを分割しておく
         - JavaAPI
         - HBase Shell
+
+## 30 Coprocessorの作り方
+
+- HBase0.92
+    - クライアントサイドで行っていた処理をサーバーサイドで行えるようにするための仕組み
+    - Observer
+        - トリガー
+    - Endpoint
+        - カスタムRPCプロトコルを提供
