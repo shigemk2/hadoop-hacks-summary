@@ -198,3 +198,24 @@ MapReduceのI/Oに独自のシリアライズ形式を利用したい場合や�
     - 処理データ量
 - JobTracker
     - タスクの実行状況を記録したテーブルのmap/reduceで完了したタスクのリンクから、Counter列の数字をみる
+
+## 25 Hadoopで圧縮ファイルを扱う
+
+- MapReduceの入力と中間出力と最終出力においてファイル圧縮を扱う機能を提供
+
+### ファイル
+
+- deflate
+- gz
+- bz2
+- snappy
+- lzo
+
+### SQL
+
+- Pig
+    - load
+- Hive
+    - load data
+
+- 圧縮差分はHadoopが吸収
