@@ -52,5 +52,10 @@
         - KeyValue
         - KeyValueのリスト
 
+## 32 export/importツール
 
+- export
+    - HBaseデータのバックアップを行うための方法の1つ
+- import
+    - エクスポートしたデータをもとに別のクラスタを構築
 
