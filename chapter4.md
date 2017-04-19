@@ -55,4 +55,4 @@ HiveQLは実行時にMapReduce処理に変換されるので、MapReduceの特�
 - 処理単位
     - 変数を使ってselect文を複数回投げるループ処理を行うと、1回のselectで全readが発生してしまう
 - order by/sort by
-    - Hiveはソート処理をk当意図しない
+    - Hiveはソート処理を得意としない
