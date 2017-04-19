@@ -48,7 +48,7 @@ RDBMSのSQL文をSQLライクなHiveQL文に変換するさいのポイント
 - order by/distinctでキー数が多すぎるとOOMになる
 - JoinをつかうときはStreaming(ファイル上)/HashMap(メモリ上)かで選べる
 
-## 36 クエリの高速化
+## 36 クエリの高速化(基本)
 
 HiveQLは実行時にMapReduce処理に変換されるので、MapReduceの特性を知る必要がある
 
