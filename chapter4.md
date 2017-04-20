@@ -81,3 +81,12 @@ HiveはSQLと同じく関数を利用できる(abs/substr)し、独自に関数�
 - UDTF(user defined table function)
 
 複雑なクエリの単純化や予め用意されている関数では不可能な処理を実現できる
+
+## 39 他システムと連携する
+
+データファイルの相互互換
+
+- SerDe(シリアライズ/デシリアライズ)
+- RegexSerDe
+- CSV用非標準SerDe
+- JSON用の非標準SerDe
