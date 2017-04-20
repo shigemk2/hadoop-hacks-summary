@@ -69,3 +69,11 @@ HiveQLは実行時にMapReduce処理に変換されるので、MapReduceの特�
 3. 同じテーブルをスキャンする回数を減らす
 
 従来RDBMSで処理していたクエリをほぼそのままHiveにマイグレーションしても性能がでない可能性
+
+## 38 ユーザ定義関数
+
+HiveはSQLと同じく関数を利用できる(abs/substr)し、独自に関数を定義できる
+
+- UDF(user defined function)
+- UADF(user defined aggregation function)
+- UDTF(user defined table function)
